@@ -1,0 +1,172 @@
+
+	Summer 2026 ? Project 1 ? Package Management Facility Simulator
+
+
+* * * * * * * * * * PACKAGE MANAGEMENT FACILITY SIMULATION BEGINS * * * * * * * * * *
+
+	The parameters for this simulation run are:
+
+	There are 3 Routing Stations in this simulation run.
+
+	Routing Station S0 Has Total Workload Of 2 Package Groups.
+	Routing Station S1 Has Total Workload Of 3 Package Groups.
+	Routing Station S2 Has Total Workload Of 4 Package Groups.
+
+%% %% ROUTING STATION S0 Initializing Conveyors %% %% %%
+Routing Station S0: Input conveyor assigned to conveyor number C0.
+%% %% ROUTING STATION S2 Initializing Conveyors %% %% %%
+Routing Station S2: Input conveyor assigned to conveyor number C2.
+Routing Station S2: Output conveyor assigned to conveyor number C0.
+Routing Station S2 Has Total Workload of 4 Package Groups.
+%% %% %% ROUTING STATION S2: Awaiting Signal From Control To Begin Operations. %% %% %%
+%% %% ROUTING STATION S1 Initializing Conveyors %% %% %%
+Routing Station S1: Input conveyor assigned to conveyor number C1.
+Routing Station S1: Output conveyor assigned to conveyor number C2.
+Routing Station S1 Has Total Workload of 3 Package Groups.
+%% %% %% ROUTING STATION S1: Awaiting Signal From Control To Begin Operations. %% %% %%
+Routing Station S0: Output conveyor assigned to conveyor number C1.
+Routing Station S0 Has Total Workload of 2 Package Groups.
+%% %% %% ROUTING STATION S0: Awaiting Signal From Control To Begin Operations. %% %% %%
+
+	>>> Control Module: All Stations Initialized ? Sending Start Signal <<<
+
+Routing Station S2: Signal Received From Control ? S2 Online.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: Currently holds lock on input conveyor C2.
+Routing Station S0: Signal Received From Control ? S0 Online.
+Routing Station S0: Entering Lock Acquisition Phase.
+Routing Station S1: Signal Received From Control ? S1 Online.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+* * * * * * Routing Station S2: Holds locks on both input conveyor C2 and output conveyor C0. * * * * * *
+* * Routing Station S2: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S2: Currently moving packages into station on input conveyor C2.
+Routing Station S2: Currently moving packages out of station on output conveyor C0.
+Routing Station S1: UNABLE TO LOCK OUTPUT CONVEYOR C2. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C2 ? Station S1 releasing lock on input conveyor C1.
+Routing Station S0: Entering Lock Acquisition Phase.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+Routing Station S1: UNABLE TO LOCK OUTPUT CONVEYOR C2. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C2 ? Station S1 releasing lock on input conveyor C1.
+Routing Station S2: Package group completed - 3 package groups remaining to move.
+Routing Station S2: Entering Lock Release Phase.
+Routing Station S2: Unlocks/releases input conveyor C2.
+Routing Station S2: Unlocks/releases output conveyor C0.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+Routing Station S1: Currently holds lock on output conveyor C2.
+* * * * * * Routing Station S1: Holds locks on both input conveyor C1 and output conveyor C2. * * * * * *
+* * Routing Station S1: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S1: Currently moving packages into station on input conveyor C1.
+Routing Station S1: Currently moving packages out of station on output conveyor C2.
+Routing Station S1: Package group completed - 2 package groups remaining to move.
+Routing Station S1: Entering Lock Release Phase.
+Routing Station S1: Unlocks/releases input conveyor C1.
+Routing Station S1: Unlocks/releases output conveyor C2.
+Routing Station S0: Entering Lock Acquisition Phase.
+Routing Station S0: Currently holds lock on input conveyor C0.
+Routing Station S0: Currently holds lock on output conveyor C1.
+* * * * * * Routing Station S0: Holds locks on both input conveyor C0 and output conveyor C1. * * * * * *
+* * Routing Station S0: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S0: Currently moving packages into station on input conveyor C0.
+Routing Station S0: Currently moving packages out of station on output conveyor C1.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S0: Package group completed - 1 package groups remaining to move.
+Routing Station S0: Entering Lock Release Phase.
+Routing Station S0: Unlocks/releases input conveyor C0.
+Routing Station S0: Unlocks/releases output conveyor C1.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: Currently holds lock on input conveyor C2.
+* * * * * * Routing Station S2: Holds locks on both input conveyor C2 and output conveyor C0. * * * * * *
+* * Routing Station S2: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S2: Currently moving packages into station on input conveyor C2.
+Routing Station S2: Currently moving packages out of station on output conveyor C0.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+Routing Station S1: UNABLE TO LOCK OUTPUT CONVEYOR C2. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C2 ? Station S1 releasing lock on input conveyor C1.
+Routing Station S2: Package group completed - 2 package groups remaining to move.
+Routing Station S2: Entering Lock Release Phase.
+Routing Station S2: Unlocks/releases input conveyor C2.
+Routing Station S2: Unlocks/releases output conveyor C0.
+Routing Station S0: Entering Lock Acquisition Phase.
+Routing Station S0: Currently holds lock on input conveyor C0.
+Routing Station S0: Currently holds lock on output conveyor C1.
+* * * * * * Routing Station S0: Holds locks on both input conveyor C0 and output conveyor C1. * * * * * *
+* * Routing Station S0: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S0: Currently moving packages into station on input conveyor C0.
+Routing Station S0: Currently moving packages out of station on output conveyor C1.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S0: Package group completed - 0 package groups remaining to move.
+Routing Station S0: Entering Lock Release Phase.
+Routing Station S0: Unlocks/releases input conveyor C0.
+Routing Station S0: Unlocks/releases output conveyor C1.
+# # Routing Station S0: going offline ? work completed! BYE! # #
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+Routing Station S1: Currently holds lock on output conveyor C2.
+* * * * * * Routing Station S1: Holds locks on both input conveyor C1 and output conveyor C2. * * * * * *
+* * Routing Station S1: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S1: Currently moving packages into station on input conveyor C1.
+Routing Station S1: Currently moving packages out of station on output conveyor C2.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: UNABLE TO LOCK OUTPUT CONVEYOR C0. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C0 ? Station S2 releasing lock on input conveyor C2.
+Routing Station S1: Package group completed - 1 package groups remaining to move.
+Routing Station S1: Entering Lock Release Phase.
+Routing Station S1: Unlocks/releases input conveyor C1.
+Routing Station S1: Unlocks/releases output conveyor C2.
+Routing Station S1: Entering Lock Acquisition Phase.
+Routing Station S1: Currently holds lock on input conveyor C1.
+Routing Station S1: Currently holds lock on output conveyor C2.
+* * * * * * Routing Station S1: Holds locks on both input conveyor C1 and output conveyor C2. * * * * * *
+* * Routing Station S1: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S1: Currently moving packages into station on input conveyor C1.
+Routing Station S1: Currently moving packages out of station on output conveyor C2.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: UNABLE TO LOCK OUTPUT CONVEYOR C0. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C0 ? Station S2 releasing lock on input conveyor C2.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: UNABLE TO LOCK OUTPUT CONVEYOR C0. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C0 ? Station S2 releasing lock on input conveyor C2.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: UNABLE TO LOCK OUTPUT CONVEYOR C0. SYNCHRONIZATION ISSUE: Station S2 currently holds the lock on output conveyor C0 ? Station S2 releasing lock on input conveyor C2.
+Routing Station S1: Package group completed - 0 package groups remaining to move.
+Routing Station S1: Entering Lock Release Phase.
+Routing Station S1: Unlocks/releases input conveyor C1.
+Routing Station S1: Unlocks/releases output conveyor C2.
+# # Routing Station S1: going offline ? work completed! BYE! # #
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: Currently holds lock on input conveyor C2.
+* * * * * * Routing Station S2: Holds locks on both input conveyor C2 and output conveyor C0. * * * * * *
+* * Routing Station S2: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S2: Currently moving packages into station on input conveyor C2.
+Routing Station S2: Currently moving packages out of station on output conveyor C0.
+Routing Station S2: Package group completed - 1 package groups remaining to move.
+Routing Station S2: Entering Lock Release Phase.
+Routing Station S2: Unlocks/releases input conveyor C2.
+Routing Station S2: Unlocks/releases output conveyor C0.
+Routing Station S2: Entering Lock Acquisition Phase.
+Routing Station S2: Currently holds lock on output conveyor C0.
+Routing Station S2: Currently holds lock on input conveyor C2.
+* * * * * * Routing Station S2: Holds locks on both input conveyor C2 and output conveyor C0. * * * * * *
+* * Routing Station S2: * * CURRENTLY HARD AT WORK MOVING PACKAGES. * *
+Routing Station S2: Currently moving packages into station on input conveyor C2.
+Routing Station S2: Currently moving packages out of station on output conveyor C0.
+Routing Station S2: Package group completed - 0 package groups remaining to move.
+Routing Station S2: Entering Lock Release Phase.
+Routing Station S2: Unlocks/releases input conveyor C2.
+Routing Station S2: Unlocks/releases output conveyor C0.
+# # Routing Station S2: going offline ? work completed! BYE! # #
+
+All Stations Offline?Simulation Ends!
+
+* * * ALL WORKLOADS COMPLETE * * * PACKAGE MANAGEMENT FACILITY SIMULATION TERMINATES * * * * * * * * * *
+
+
+ * %% * %% * %% SIMULATION ENDS %% * %% * %% *
+
