@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enterprise Web Management System</title>
+  <style>
+    body {
+      background-color: black;
+      color: yellow;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 { color: yellow; font-size: 32px; }
+    h2 { color: green; font-size: 22px; }
+    h3 { color: red; font-size: 20px; }
+    .form-container {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #111;
+      padding: 30px;
+      border: 1px solid gray;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-size: 18px;
+      color: green;
+      text-align: left;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 250px;
+      padding: 8px;
+      background-color: #665c1e;
+      border: 2px solid #999900;
+      color: white;
+      font-size: 16px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: black;
+      color: green;
+      border: 2px solid green;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Enterprise Management System</h1>
+  <h2>A Servlet/JSP-based Multi-tiered Enterprise Application Using A Tomcat Container</h2>
+  <h3>- User Authentication Page -</h3>
+  <hr color="yellow">
+  <div class="form-container">
+    <form action="/Project-3/auth" method="post">
+      <label for="username">UserName</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" class="submit-btn" value="Click To Authenticate">
+    </form>
+  </div>
+</body>
+</html>
