@@ -1,1 +1,1 @@
-# Enterprise-application-series
+# Enterprise Application Series
