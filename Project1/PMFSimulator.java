@@ -9,17 +9,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-/*
- * Name: Vinh Vu
- * Class: PMFSimulator.java
- */
 public class PMFSimulator {
 
-    private static final int MAX = 10; // Requirement 4: fixed thread pool upper limit
+    private static final int MAX = 10; // fixed thread pool upper limit
 
     public static void main(String[] args) {
 
-        System.out.println("\n\tSummer 2026 – Project 1 – Package Management Facility Simulator\n");
+        System.out.println("\n\tPackage Management Facility Simulator\n");
         System.out.println("\n* * * * * * * * * * PACKAGE MANAGEMENT FACILITY SIMULATION BEGINS * * * * * * * * * *\n");
 
         // --- Read configuration file ---
@@ -50,11 +46,8 @@ public class PMFSimulator {
         }
 
         // --- Synchronization objects ---
-        // Requirement 6: CountDownLatch – counts down once per station initialization
         CountDownLatch initLatch = new CountDownLatch(numStations);
 
-        // Requirement 7: CyclicBarrier – all stations + main thread meet here
-        // Barrier action (runs when all parties arrive) prints the control signal message
         CyclicBarrier startBarrier = new CyclicBarrier(numStations, () ->
             System.out.println("\n\t>>> Control Module: All Stations Initialized – Sending Start Signal <<<\n")
         );
@@ -97,7 +90,6 @@ public class PMFSimulator {
             Thread.currentThread().interrupt();
         }
 
-        // Output 13 – simulation ends
         System.out.println("\nAll Stations Offline…Simulation Ends!");
         System.out.println("\n* * * ALL WORKLOADS COMPLETE * * * PACKAGE MANAGEMENT FACILITY SIMULATION TERMINATES * * * * * * * * * *\n");
         System.out.println("\n * %% * %% * %% SIMULATION ENDS %% * %% * %% *\n");
