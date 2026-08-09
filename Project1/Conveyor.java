@@ -2,9 +2,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /*
  * Name: Vinh Vu
- * Course: CNT 4714 Summer 2026
- * Assignment title: Project 1: Multi-threaded programming in Java
- * Date: June 7, 2026
  * Class: Conveyor.java
  */
 public class Conveyor {
