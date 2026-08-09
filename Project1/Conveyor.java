@@ -1,9 +1,5 @@
 import java.util.concurrent.locks.ReentrantLock;
 
-/*
- * Name: Vinh Vu
- * Class: Conveyor.java
- */
 public class Conveyor {
 
     /** Subclass exposes the protected getOwner() method. */
@@ -37,7 +33,7 @@ public class Conveyor {
 
     /**
      * Returns the name of the thread currently holding this conveyor's lock,
-     * or "unknown" if no thread holds it. Used for Output 8 diagnostics.
+     * or "unknown" if no thread holds it. Used for diagnostics.
      */
     public String getOwnerName() {
         Thread t = lock.getOwnerThread();
